@@ -8,11 +8,9 @@
     name: common
     tasks_from: app-setup
 
-
-
 - name: systemd setup
   include_role:
-    name: systemd  
+    name: common  
     tasks_from: systemd
 
 - name: copy mongodb repo
