@@ -1,14 +1,14 @@
-- name: app-setup
-  include_roles:
-    name: app-setup
-  tasks_from: app-setup
-
-- name: nodejs
-  include_roles: 
-    name: nodejs
-  tasks_froom: nodejs
-
-- name: systemd
-  include_roles:
-    name: systemd
-  tasks_from: systemd
+- name: app setup 
+  include_role:
+    name: common
+    tasks_from: app-setup
+    
+- name: nodejs setup
+  include_role:
+    name: common
+    tasks_from: nodejs
+    
+- name: systemd setup
+  include_role:
+    name: common  
+    tasks_from: systemd
