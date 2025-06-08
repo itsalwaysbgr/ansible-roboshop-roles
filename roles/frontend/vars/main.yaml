@@ -3,3 +3,4 @@ REDIS_HOST: redis.daws86s.site
 MONGODB_HOST: mongodb.daws86s.site
 USER_HOST: user.daws86s.site
 CART_HOST: cart.daws86s.site
+SHIPPING_HOST: shipping.daws86s.site
